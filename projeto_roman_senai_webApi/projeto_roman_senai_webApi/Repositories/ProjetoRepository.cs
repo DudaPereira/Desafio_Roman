@@ -15,6 +15,8 @@ namespace projeto_roman_senai_webApi.Repositories
         public void Cadastrar(Projeto projeto)
         {
             ctx.Projetos.Add(projeto);
+
+            ctx.SaveChanges();
         }
 
         public List<Projeto> ListarTodos()

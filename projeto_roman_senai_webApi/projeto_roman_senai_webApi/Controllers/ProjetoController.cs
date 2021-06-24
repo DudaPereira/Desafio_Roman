@@ -23,7 +23,7 @@ namespace projeto_roman_senai_webApi.Controllers
             _projetoRepository = new ProjetoRepository();
         }
 
-        //[Authorize(Roles = "1")]
+        [Authorize(Roles = "1")]
         [HttpGet]
         public IActionResult Get()
         {
@@ -41,7 +41,7 @@ namespace projeto_roman_senai_webApi.Controllers
             }
         }
 
-        //[Authorize(Roles = "1")]
+        [Authorize(Roles = "1")]
         [HttpPost]
         public IActionResult Post(Projeto novoProjeto)
         {
